@@ -1,0 +1,569 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* 
+  Dark BLUE theme with big text, more content, 
+  and accent colors (#3B82F6 for CTA, #ffcc00 for headings).
+*/
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;            /* Full-screen height if you like */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  border-radius: 0px;
+  margin-top: 0px;
+ 
+    padding-top: 80px; /* Offset the navbar height */
+  
+  
+
+  /* Light to peach gradient from left to right */
+  background: linear-gradient(to right, #ffffff 0%, #ffecd8 100%);
+}
+
+
+.heroContent {
+  max-width: 700px;
+  text-align: center;
+}
+
+.heroContent h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #001048;
+}
+
+.heroContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1c0101;
+}
+
+.heroContent p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #031e3f;
+}
+
+.ctaButton {
+  background-color: #e33708;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #f14907;
+  transform: translateY(-2px);
+}
+
+/* UDAAN Registration Section */
+.udaanSection {
+  min-height: 100vh; /* Full-screen height */
+  background-color: #f8f9fa; /* Light background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0; /* Reduce empty space above & below */
+}
+
+.udaanContainer {
+  max-width: 1400px; /* Increase width */
+  width: 90%; /* Allow responsiveness */
+  display: flex;
+  gap: 5rem; /* Increase spacing between form & text */
+  justify-content: space-between; /* Align items properly */
+  align-items: center;
+  text-align: center;
+}
+
+.udaanLeft,
+.udaanRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.udaanLeft h2,
+.udaanRight h2 {
+  font-size: 2.5rem; /* Bigger headings */
+  color: #0c2340; /* Dark blue */
+  margin-bottom: 1rem;
+}
+
+.udaanRight h3 {
+  font-size: 1.8rem;
+  color: #1a1a1a; /* Darker shade */
+}
+
+.udaanRight p,
+.udaanRight ul {
+  text-align: center;
+  max-width: 500px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.udaanHighlights {
+  list-style: none;
+  padding: 0;
+}
+
+.udaanHighlights li {
+  margin-bottom: 0.8rem;
+  color: #333;
+  font-size: 1.1rem;
+}
+.whatsappButton {
+  position: fixed; /* Makes it always visible */
+  bottom: 20px; /* Distance from bottom */
+  left: 20px; /* Distance from left */
+  background-color: #25D366; /* WhatsApp Green */
+  border-radius: 50%; /* Makes it circular */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.whatsappButton:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+.udaanForm {
+  width: 100%;
+  max-width: 500px; /* Increase form width */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.formRow input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Slightly rounder inputs */
+  background-color: #ffffff;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.submitButton {
+  background-color: #ff7f32;
+  color: #fff;
+  border: none;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.submitButton:hover {
+  background-color: #e86f26;
+}
+
+.downloadButton {
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  padding: 1.2rem 1.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  text-decoration: none; /* Removes underline */
+  display: inline-block; /* Ensures it behaves like a button */
+}
+
+
+.downloadButton:hover {
+  background-color: #e6ac05;
+}
+
+/* 3-Year Course Structure */
+.courseStructure {
+  background-color: #E8EAF1;
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.courseStructure h2 {
+  color: #0c2340;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.courseIntro {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.courseCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.courseCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 300px;
+  text-align: left;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.courseCard h3 {
+  color: #ff7f32;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.courseCard p {
+  margin-bottom: 1rem;
+}
+
+.courseCard ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+/* IAS Olympiad & Entrance Exam Instructions */
+.examInstructions {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.instructionBox {
+  flex: 1;
+  min-width: 320px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  color: #333;
+  margin: 1rem;
+  transition: box-shadow 0.3s;
+}
+
+.instructionBox:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instructionBox h3 {
+  color: #0c2340;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.instructionBox p {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.instructionBox ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Achievers Section */
+.achieversSection {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffffff, #f9fafb);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.achieversSection h2 {
+  font-size: 2.2rem;
+  color: #0c2340;
+  margin-bottom: 1.5rem;
+}
+
+.achieversIntro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.achieversGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.achieverCard {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 350px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.achieverCard:hover {
+  transform: translateY(-5px);
+}
+
+.achieverImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #0c2340;
+}
+
+.achieverCard h3 {
+  font-size: 1.4rem;
+  color: #0c2340;
+  margin-bottom: 0.5rem;
+}
+
+.achieverRank {
+  font-size: 1.1rem;
+  color: #0c2340;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.achieverQuote {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+/* Video Section */
+.videoSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #ffffff 0%, #ffecd8 100%);
+  text-align: center;
+}
+
+.videoSection h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: #0c2340;
+}
+
+.videoText {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.videoContainer iframe {
+  border: none;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+/* Why Dhyeya IAS */
+.whyDhyeya {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ffffff 30%, #f9fafb 90%);
+  text-align: center;
+}
+
+.whyDhyeya h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: #0c2340;
+}
+
+.whyDhyeyaText {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.7;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.whyDhyeyaPoints {
+  list-style: disc;
+  margin: 1.5rem auto 2rem;
+  padding-left: 1.8rem;
+  max-width: 600px;
+  text-align: left;
+  color: #222;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.guideButton {
+  background-color: #ffcc00;
+  color: #0c2340;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.guideButton:hover {
+  background-color: #f7bf00;
+}
+
+/* Meet Our Toppers */
+.toppersSection {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffffff, #f9fafb);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.toppersSection h2 {
+  font-size: 2.2rem;
+  color: #0c2340;
+  margin-bottom: 1.5rem;
+}
+
+.toppersIntro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.toppersGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.topperCard {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 350px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.topperCard:hover {
+  transform: translateY(-5px);
+}
+
+.topperImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #0c2340;
+}
+
+.topperCard h3 {
+  font-size: 1.4rem;
+  color: #0c2340;
+  margin-bottom: 0.5rem;
+}
+
+.topperRank {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 2rem;
+  background-color: #020F48;
+  line-height: 1.6;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.textArea {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  resize: none;
+}
+
+.textArea:focus {
+  outline: none;
+  border-color: #ff7f32;
+  box-shadow: 0 0 8px rgba(255, 127, 50, 0.4);
+}
+
+
+

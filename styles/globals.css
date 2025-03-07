@@ -1,0 +1,30 @@
+/* Reset Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure full width & remove extra margins */
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Navbar fix */
+body {
+  background-color: #ffffff;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  /* Ensure space for fixed navbar */
+}
+
+/* Ensures content is properly aligned */
+main {
+  flex: 1; /* Allows main content to take full height */
+}
